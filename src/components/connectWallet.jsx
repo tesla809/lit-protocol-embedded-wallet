@@ -1,8 +1,9 @@
-import MetamaskButton from "./payment-buttons/metamaskButton.jsx";
-import CoinbaseWalletButton from "./payment-buttons/coinbaseWalletButton.jsx";
-import WalletConnectButton from "./payment-buttons/walletConnectButton.jsx";
+import MetamaskButton from "./atoms/payment-buttons/metamaskButton.jsx";
+import CoinbaseWalletButton from "./atoms/payment-buttons/coinbaseWalletButton.jsx";
+import WalletConnectButton from "./atoms/payment-buttons/walletConnectButton.jsx";
+import BackButton from "./atoms/BackButton.jsx";
 
-export default function ConnectWallet({ prompt, header, placeholder }) {
+export default function ConnectWallet({ prompt, header }) {
   return (
     <div>
       <section className="bg-gray-50 dark:bg-gray-900">
@@ -20,12 +21,7 @@ export default function ConnectWallet({ prompt, header, placeholder }) {
               <MetamaskButton />
               <CoinbaseWalletButton />
               <WalletConnectButton />
-              <a
-                type="submit"
-                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >
-                Back
-              </a>
+              <BackButton />
             </div>
           </div>
         </div>

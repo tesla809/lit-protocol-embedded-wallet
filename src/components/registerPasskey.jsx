@@ -1,3 +1,5 @@
+import BackButton from "./atoms/BackButton.jsx";
+
 export default function RegisterPassKey({ header, prompt }) {
   return (
     <div>
@@ -11,21 +13,16 @@ export default function RegisterPassKey({ header, prompt }) {
             <h2 className="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
               {header}
             </h2>
-            {prompt}
+            <h3>{prompt}</h3>
             <form className="mt-4 space-y-4 lg:mt-5 md:space-y-5" action="#">
               <button
                 type="button"
-                class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-8 py-3.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
+                className="px-12 py-3 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
               >
                 Create a Credential
               </button>
             </form>
-            <a
-              type="submit"
-              className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-            >
-              Back
-            </a>
+            <BackButton />
           </div>
         </div>
       </section>

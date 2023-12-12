@@ -43,6 +43,8 @@ This would be great as a picture.
 
 See: https://developer.litprotocol.com/v3/sdk/authentication/session-sigs/auth-methods/overview
 
+[] add migration: https://www.geeksforgeeks.org/how-to-migrate-from-create-react-app-to-next-js/
+
 ## Lit Protocol Overview
 
 Lit Protocol is a network of decentralized nodes for private key generation, signing and encryption. Through decentralization, we can create reslient applications without a single point of failure. This is similar to how the internet was designed, resilence through decentralization.

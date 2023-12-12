@@ -1,9 +1,16 @@
-import WelcomeHeader from "./welcomeHeader.jsx";
-import Overview from "./overview.jsx";
-import ThirdPartyAuth from "./thirdPartyAuth.jsx";
-import SignIn from "./signInBlurb.jsx";
+import WelcomeHeader from "./atoms/welcomeHeader.jsx";
+import Overview from "./atoms/overview.jsx";
+import ThirdPartyAuth from "./atoms/thirdPartyAuth.jsx";
+import FooterBlurb from "./atoms/FooterBlurb.jsx";
 
+// sign up
 export default function SignUp() {
+  const overviewPrompt =
+    "Create a wallet that is secured by accounts you already have. With Lit-powered programmable MPC wallets, you won't have to worry about seed phrases.";
+  const footerPrompt = "Already have an account?";
+  const signPrompt = "Sign in";
+  const linkSignIn = "/sign-in"; // redirects to sign-in
+
   // some stuff
   return (
     // some stuff
@@ -15,10 +22,14 @@ export default function SignUp() {
               href="#"
               className="inline-flex items-center mb-4 text-xl font-normal text-gray-900 dark:text-white"
             ></a>
-            <WelcomeHeader />
-            <Overview />
-            <ThirdPartyAuth />
-            <SignIn />
+            <WelcomeHeader prompt="Welcome back" />
+            <Overview prompt={overviewPrompt} />
+            <ThirdPartyAuth prompt="Sign Up" />
+            <FooterBlurb
+              prompt={footerPrompt}
+              signPrompt={signPrompt}
+              link={linkSignIn}
+            />
           </div>
         </div>
       </div>
