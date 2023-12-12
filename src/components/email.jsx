@@ -1,9 +1,12 @@
-import BackButton from "./atoms/BackButton.jsx";
+import BackButton from "./atoms/BackButton";
 
 export default function emailSignIn() {
   return (
     <div className="email-sign">
-      <form className="mt-4 space-y-6 sm:mt-6" action="#">
+      <form
+        className="grid p-6 max-w-md px-4 py-8 mx-auto lg:gap-20 lg:py-16 lg:grid-cols-12"
+        action="#"
+      >
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <label
